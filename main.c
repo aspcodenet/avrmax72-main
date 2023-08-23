@@ -35,6 +35,7 @@ int main()
 	int x = 0;
 	int y = 0;
 	unsigned char toBeWritten;
+	int rrr = 99;
  
 	while (1) {
         for(int row = 0; row < 8;row++){
@@ -49,6 +50,8 @@ int main()
 				}
 			}
 		}
+		printf("Hej %d\n", rrr);
+		rrr++;
 		max7219b_out();
 			// max7219b_set(3, 5); // HÄR HÄNDER INGET - double buffer
 			// max7219b_set(4, 5); // HÄR HÄNDER INGET - double buffer
